@@ -16,9 +16,10 @@ public class TeacherService {
         return teacherRepository.findAll();
     }
 
-    public void save(Teacher teacher) {
+    public String save(Teacher teacher) {
 
         teacherRepository.save(teacher);
+        return null;
     }
 
     public Teacher get(long id) {
