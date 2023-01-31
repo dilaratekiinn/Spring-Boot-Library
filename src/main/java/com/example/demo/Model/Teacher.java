@@ -13,6 +13,10 @@ public class Teacher {
     private String tarih;
     private String telno;
 
+    // bu alttaki bir constructor doğru unuttum ya hatta generatedtan seçiyodumf dslfndfl evet
+    public Teacher(){
+
+    }
 
     public Teacher(long id, String ad, String soyad, String tarih, String telno) {
         this.id = id;

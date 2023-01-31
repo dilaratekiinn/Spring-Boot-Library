@@ -11,19 +11,33 @@ public class Student {
     private String soyad;
     private Float aylik;
     private Float kayittutar;
+    private String sinifadi;
+
     private Integer taksitsayisi;
     private String tarih;
     private String telno;
 
-    public Student(long id, String ad, String soyad, Float aylik, Float kayittutar, Integer taksitsayisi, String tarih, String telno) {
+    public Student() {
+    }
+
+    public Student(long id, String ad, String soyad, Float aylik, Float kayittutar, String sinifadi, Integer taksitsayisi, String tarih, String telno) {
         this.id = id;
         this.ad = ad;
         this.soyad = soyad;
         this.aylik = aylik;
         this.kayittutar = kayittutar;
+        this.sinifadi = sinifadi;
         this.taksitsayisi = taksitsayisi;
         this.tarih = tarih;
         this.telno = telno;
+    }
+
+    public String getSinifadi() {
+        return sinifadi;
+    }
+
+    public void setSinifadi(String sinifadi) {
+        this.sinifadi = sinifadi;
     }
 
     public long getId() {

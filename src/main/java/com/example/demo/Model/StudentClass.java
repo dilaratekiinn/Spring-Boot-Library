@@ -1,8 +1,10 @@
 package com.example.demo.Model;
 
 import jakarta.persistence.*;
+import lombok.NoArgsConstructor;
 
 @Entity
+@NoArgsConstructor // buna da bunu ekledim az önce yaptıklarımın aynısını yapıyobiliyom demiştin sabah i ay dün ivitm
 public class StudentClass {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

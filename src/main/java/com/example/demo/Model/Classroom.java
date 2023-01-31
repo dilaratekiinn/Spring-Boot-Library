@@ -13,6 +13,9 @@ public class Classroom {
     private String sinifadi;
     private String tarih;
 
+    public Classroom() {
+    }
+
     public Classroom(long id, String sinifadi, String tarih) {
         this.id = id;
         this.sinifadi = sinifadi;

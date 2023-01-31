@@ -1,15 +1,13 @@
 package com.example.demo.Repository;
 
-import com.example.demo.Model.Teacher;
+import com.example.demo.Model.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-@Repository
+@Service
 @EnableJpaRepositories
-public interface TeacherRepository extends JpaRepository<Teacher,Long> {
-
+public interface StudentRepository extends JpaRepository<Student, Long> {
 
 }
-

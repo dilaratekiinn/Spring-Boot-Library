@@ -12,21 +12,28 @@ public class TeacherService {
     @Autowired
     private TeacherRepository teacherRepository;
 
-    public List<Teacher> listAll() {
+    public List<Teacher> listAll()
+    {
         return teacherRepository.findAll();
     }
 
-    public String save(Teacher teacher) {
+    public Teacher save(Teacher teacher) {
 
-        teacherRepository.save(teacher);
-        return null;
+       return teacherRepository.save(teacher);
+
     }
 
-    public Teacher get(long id) {
-        return teacherRepository.findById(id).get();
+    public Teacher getById(long id) {
+
+
+        return teacherRepository.findById(id).orElseThrow();
     }
 
     public void delete(long id) {
+
         teacherRepository.deleteById(id);
     }
+
+
+
 }
